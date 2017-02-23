@@ -1,0 +1,164 @@
+body{
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 46px
+}
+
+.container-fluid{
+    padding: 0
+}
+
+.navbar-default{
+    background-color: #333;
+    border: none;
+    border-radius: 0;
+    margin-bottom: -20px
+}
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-brand{
+    color: #eee
+}
+
+.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:active, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:active{
+    color: #f88f1c;
+}
+
+.navbar-right{
+    margin-right: 0.8em
+}
+header{
+   min-height: 500px;
+   text-transform: uppercase;
+   padding: 0 1em;
+}
+header .row{
+   margin-top: 1em 0;
+}
+header img{
+    width: 100%;
+    height: auto
+}
+
+header h3{
+    max-width: 38em;
+    margin: 1em auto
+}
+
+.panel-default>.panel-heading{
+    background-color: #f88f1c;
+    border-color:   #f88f1c;
+    color:#eee
+}
+
+.form-control{
+    margin: 1em 0;
+    padding: 1.5em;
+}
+
+.form{
+    margin-top: 5em;
+}
+
+.spec_price{
+    font-size: 30px;
+    font-weight: 700
+}
+
+
+
+
+
+.benefits{
+    margin: 1em 0 4em
+}
+
+.benefits h2, .tech h2, .cat h2, .fish h2{
+    margin:  2em 0
+}
+
+.cat .thumbnail{
+    min-height: 565px;
+    margin-bottom: 0
+}
+
+.well{
+    background-color: #4caf50!important;
+    color: #eee
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    max-width: 70%
+}
+
+footer{
+    background-color: #333;
+    color: #eee
+}
+
+footer .row{
+    margin-top: 2em
+}
+
+.panel-body{
+    padding: 0
+}
+
+
+@media screen and (min-width:768px){
+    header{
+          padding: 0 8em;
+    }
+    .banner {
+    background-image:url("../pictures/river2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0 0 0.5em 0
+    }
+
+.banner .container-fluid{
+    background-color: #333;
+    background-color: rgba(0,0,0,0.5);
+    color: #eee;
+}
+
+.fish {
+    background-image:url("../pictures/fisher.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0 0 0.5em 0;
+    min-height: 250px
+    }
+
+.fish .container-fluid{
+    background-color: #333;
+    background-color: rgba(0,0,0,0.5);
+    color: #eee;
+    min-height: 250px
+}
+}
+
+@media screen and (max-width:768px){
+.media-body{
+  width: auto;
+  display: block!important
+}
+.nav{
+    margin: 0
+}
+.nav li{
+    border-bottom: 1px solid #eee;
+    padding: 0.5em 0     
+}
+.navbar-collapse{
+    padding: 0
+}
+}
