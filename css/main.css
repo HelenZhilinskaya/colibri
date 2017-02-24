@@ -3,7 +3,7 @@ body{
     font-size: 16px
 }
 
-h1{
+h1, h2{
     font-family: 'Oswald', sans-serif;
     font-size: 46px
 }
@@ -59,7 +59,7 @@ header h3{
 }
 
 .form{
-    margin-top: 5em;
+    margin-top: 2em;
 }
 
 .spec_price{
@@ -89,13 +89,7 @@ header h3{
     color: #eee
 }
 
-hr {
-    border: 0;
-    height: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    max-width: 70%
-}
+
 
 footer{
     background-color: #333;
@@ -144,6 +138,55 @@ footer .row{
     color: #eee;
     min-height: 250px
 }
+
+/**Animated Button**/
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+@-webkit-keyframes shake {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+}
 }
 
 @media screen and (max-width:768px){
@@ -160,5 +203,29 @@ footer .row{
 }
 .navbar-collapse{
     padding: 0
+}
+h1{
+    font-size: 30px
+}
+
+h2{
+    font-size: 23px
+}
+
+h3{
+    font-size: 18px;
+
+}
+.form{
+    margin-top: 0
+}
+.benefits{
+    margin: 0
+}
+}
+
+@media (min-width: 900px){
+.navbar-toggle {
+    display: none;
 }
 }
