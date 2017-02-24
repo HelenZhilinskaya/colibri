@@ -31,8 +31,7 @@
   <!-- CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css" >
-    <link rel="stylesheet" href="css/animate.css" >    
-    
+
    <!-- jQuery JS -->
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -58,7 +57,7 @@ crossorigin="anonymous"></script>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-tint"></span> ЛОДКИ &#171;КОЛИБРИ&#187;</a>
+      <a class="navbar-brand hidden-xs hidden-sm" href="#"><span class="glyphicon glyphicon-tint"></span> ЛОДКИ &#171;КОЛИБРИ&#187;</a>
     </div>
  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
@@ -93,7 +92,7 @@ crossorigin="anonymous"></script>
  <h3>Покупая через наш сайт, Вы покупаете у <strong>официального представителя лодок на территории РБ</strong> компании &#171;OOO Шереспер&#187; </h3>   
 
 <div class="row">
-    <div class="col-md-offset-1 col-md-5">
+    <div class="col-md-offset-1 col-md-5 col-sm-6">
      <div class="panel panel-default">
   <div class="panel-heading"><h4><span class="glyphicon glyphicon-star"></span> Лидер продаж! Модель K-260</h4><p>НЕ ПОДЛЕЖИТ ГОСУДАРСТВЕННОЙ РЕГИСТРАЦИИ</p></div>
   <div class="panel-body">
@@ -101,16 +100,16 @@ crossorigin="anonymous"></script>
   </div>
 </div>      
         </div>
-    <div class="form col-md-5">
+    <div class="form col-md-5 col-sm-6">
         <h3>СПЕЦИАЛЬНАЯ ЦЕНА ДЛЯ ПЕРВЫХ 10 ПОКУПАТЕЛЕЙ</h3>
        <p class="spec_price">439.00 РУБЛЕЙ</p>
 
       
-<form id="application" action="application.php" method="POST" name=" application ">
- <input id="zayavkaName" name="name" type="text" class="form-control" maxlength="20" placeholder="Введите имя" required />
- <input id="applicationEmail" name="email" type="email" class="form-control" maxlength="20" placeholder="Введите email" required />
- <input id="applicationTelephone" name="telephone" type="tel" class="form-control" maxlength="20" placeholder="Введите телефон" required />
- <button type="submit" form="application" class=" animated shake applicationButton btn btn-danger btn-lg">КУПИТЬ СЕЙЧАС</button>
+<form>
+ <input type="text" class="form-control" maxlength="20" placeholder="Введите имя" required />
+ <input type="email" class="form-control" maxlength="20" placeholder="Введите email" required />
+ <input type="tel" class="form-control" maxlength="20" placeholder="Введите телефон" required />
+ <button type="submit" class=" animated shake applicationButton btn btn-danger btn-lg">КУПИТЬ СЕЙЧАС</button>
 </form>
 
     </div>
@@ -149,7 +148,7 @@ crossorigin="anonymous"></script>
 <h2>ТЕХНОЛОГИИ ИЗГОТОВЛЕНИЯ ЛОДОК &#171;КОЛИБРИ&#187;</h2>
 
 <div class="media">
-  <div class="media-left">
+  <div class="media-left hidden-xs">
       <img class=" thumbnail media-object" src="pictures/002.jpg" alt="...">
   </div>
   <div class="media-body">
@@ -171,14 +170,14 @@ crossorigin="anonymous"></script>
     <p class="text-justify">Для изготовления швов баллонов лодок <b>&#171;Колибри&#187;</b> применяется технология сварки горячим воздухом. Данная технология обеспечивает появление качественных прочных ровных швов за один цикл работы, при этом обеспечивается быстрый и равномерный нагрев свариваемых материалов по всей толщине в местах сварки. В итоге получаются сверхпрочные, герметичные швы, стойкие к избыточным нагрузкам и перепадам температур.
  </p>
   </div>
- <div class="media-right">
+ <div class="media-right hidden-xs">
       <img class=" thumbnail media-object" src="pictures/001.jpg" alt="...">
   </div>
 
 </div>
 
 <div class="media">
-  <div class="media-left">
+  <div class="media-left hidden-xs">
       <img class=" thumbnail media-object" src="pictures/003.jpg" alt="...">
   </div>
   <div class="media-body">
@@ -191,7 +190,7 @@ crossorigin="anonymous"></script>
 
 </div>
 </section>
-<hr>
+
 <section id="catalog" class="cat">
 
 
@@ -219,7 +218,7 @@ crossorigin="anonymous"></script>
       </div>
     </div>
   </div>
-  <div class="panel-footer"> <button type="submit" form="application" class="applicationButton btn btn-danger">ЗАКАЗАТЬ СЕЙЧАС</button></div>
+  <div class="panel-footer"> <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">ЗАКАЗАТЬ СЕЙЧАС</button></div>
 </div>
  </div>
 
@@ -238,7 +237,7 @@ crossorigin="anonymous"></script>
       </div>
     </div>
   </div>
-  <div class="panel-footer"> <button type="submit" form="application" class="applicationButton btn btn-danger">УЗНАТЬ СТОИМОСТЬ</button></div>
+  <div class="panel-footer">  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">УЗНАТЬ СТОИМОСТЬ</button></div>
 </div>
  </div>
 
@@ -259,7 +258,7 @@ crossorigin="anonymous"></script>
       </div>
     </div>
   </div>
-  <div class="panel-footer"> <button type="submit" form="application" class="applicationButton btn btn-danger">УЗНАТЬ СТОИМОСТЬ</button></div>
+  <div class="panel-footer"> <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">УЗНАТЬ СТОИМОСТЬ</button></div>
 </div>
  </div>
 
@@ -284,7 +283,7 @@ crossorigin="anonymous"></script>
       </div>
     </div>
   </div>
-  <div class="panel-footer"> <button type="submit" form="application" class="applicationButton btn btn-danger">УЗНАТЬ СТОИМОСТЬ</button></div>
+  <div class="panel-footer"> <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">УЗНАТЬ СТОИМОСТЬ</button></div>
 </div>
  </div>
 
@@ -304,7 +303,7 @@ crossorigin="anonymous"></script>
       </div>
     </div>
   </div>
-  <div class="panel-footer"> <button type="submit" form="application" class="applicationButton btn btn-danger">УЗНАТЬ СТОИМОСТЬ</button></div>
+  <div class="panel-footer"> <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">УЗНАТЬ СТОИМОСТЬ</button></div>
 </div>
  </div>
 
@@ -324,7 +323,7 @@ crossorigin="anonymous"></script>
       </div>
     </div>
   </div>
-  <div class="panel-footer"> <button type="submit" form="application" class="applicationButton btn btn-danger">УЗНАТЬ СТОИМОСТЬ</button></div>
+  <div class="panel-footer"> <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">УЗНАТЬ СТОИМОСТЬ</button></div>
 </div>
  </div>
     </div><!--Row-->
@@ -336,7 +335,30 @@ crossorigin="anonymous"></script>
 </div><!--Container-->
 
 </section>
-<hr>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">ЗАПОЛНИТЕ ФОРМУ И НАШ КОНСУЛЬТАНТ СВЯЖЕТСЯ С ВАМИ</h4>
+        </div>
+        <div class="modal-body">
+          <form id="application" action="application.php" method="POST" name="application">
+ <input id="name" name="name" type="text" class="form-control" maxlength="20" placeholder="Введите имя" required />
+ <input id="email" name="email" type="email" class="form-control" maxlength="20" placeholder="Введите email" required />
+ <input id="telephone" name="telephone" type="tel" class="form-control" maxlength="20" placeholder="Введите телефон" required />
+ <button type="submit" form="application" class="applicationButton btn btn-danger">ОТПРАВИТЬ</button>
+</form>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
 
 
 <footer>
